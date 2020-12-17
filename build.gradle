@@ -47,11 +47,13 @@ dependencies {
 def configDir = "${project.rootDir}/config"
 
 pmdMain {
+    ruleSets = []
     ruleSetFiles = files("$configDir/pmd.xml")
     source ='src/main/java'
 }
 
 pmdTest {
+    ruleSets = []
     ruleSetFiles = files("$configDir/pmd.xml")
     source ='src/test/java'
 }
@@ -64,10 +66,4 @@ checkstyleMain {
 checkstyleTest {
     configFile file("$configDir/checkstyle.xml")
     source ='src/test/java'
-}
-
-task runIsOdd(dependsOn: 'classes') {
-    doFirst() {
-        println InputProperties.isOdd(n as Integer)
-    }
 }

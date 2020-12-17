@@ -1,2 +1,4 @@
-TestInputProperties.java
- TestInputProperties
+TestingArrayFunctions.java
+ TestingArrayFunctions
+TestingTime.java
+ TestingTime
