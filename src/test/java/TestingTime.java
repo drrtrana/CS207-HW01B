@@ -62,7 +62,7 @@ public class TestingTime {
         /*LocalTime localTime = LocalTime.now();
         Time testTime = Time.localTimeToTimeObject(localTime);
         int n = localTime.getHour();
-        int h = n > 12 ? localTime.getHour() - 12 : n;
+        int h = n > 12 ? n - 12 : n;
         char m = n > 12 ? 'P' : 'A';
         assertTrue(h == testTime.getHour());
         assertTrue(localTime.getMinute() == testTime.getMin());
@@ -78,7 +78,7 @@ public class TestingTime {
             LocalTime localTime = localTimeArray[i];
             Time testTime = timeArray[i];
             int n = localTime.getHour();
-            int h = n > 12 ? localTime.getHour() - 12 : n;
+            int h = n > 12 ? n - 12 : n;
             char m = n > 12 ? 'P' : 'A';
             assertTrue(h == testTime.getHour());
             assertTrue(localTime.getMinute() == testTime.getMin());
