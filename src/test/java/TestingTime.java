@@ -60,32 +60,30 @@ public class TestingTime {
     @Test
     void localTimeToTimeObjectShouldReturnTimeObject() {
         /*LocalTime localTime = LocalTime.now();
-        int hour = localTime.getHour() > 12 ? localTime.getHour() - 12 : localTime.getHour();
-        char meridiem = localTime.getHour() > 12 ? 'P' : 'A';
-        Time testTime= Time.localTimeToTimeObject(localTime);
-        assertTrue(hour == testTime.getHour()
-                    && localTime.getMinute() == testTime.getMin()
-                    && localTime.getSecond() == testTime.getSec()
-                    && meridiem == testTime.getMeridiem());*/
+        Time testTime = Time.localTimeToTimeObject(localTime);
+        int n = localTime.getHour();
+        int h = n > 12 ? localTime.getHour() - 12 : n;
+        char m = n > 12 ? 'P' : 'A';
+        assertTrue(h == testTime.getHour());
+        assertTrue(localTime.getMinute() == testTime.getMin());
+        assertTrue(localTime.getSecond() == testTime.getSec());
+        assertTrue(m == testTime.getMeridiem());*/
     }
 
     @Test
     void getMultipleTimesShouldReturnTimeArray() {
         /*LocalTime[] localTimeArray = {LocalTime.now(), LocalTime.MIDNIGHT, LocalTime.NOON, LocalTime.MAX};
         Time[] timeArray = Time.getMultipleTimes(localTimeArray);
-        boolean convertedCorrectly = true;
-        int i = 0;
-        while(i < localTimeArray.length && convertedCorrectly) {
+        for(int i = 0; i < localTimeArray.length; i++) {
             LocalTime localTime = localTimeArray[i];
-            int hour = localTime.getHour() > 12 ? localTime.getHour() - 12 : localTime.getHour();
-            char meridiem = localTime.getHour() > 12 ? 'P' : 'A';
             Time testTime = timeArray[i];
-            convertedCorrectly = hour == testTime.getHour()
-                    && localTime.getMinute() == testTime.getMin()
-                    && localTime.getSecond() == testTime.getSec()
-                    && meridiem == testTime.getMeridiem();
-            assertTrue(convertedCorrectly);
-            i++;
+            int n = localTime.getHour();
+            int h = n > 12 ? localTime.getHour() - 12 : n;
+            char m = n > 12 ? 'P' : 'A';
+            assertTrue(h == testTime.getHour());
+            assertTrue(localTime.getMinute() == testTime.getMin());
+            assertTrue(localTime.getSecond() == testTime.getSec());
+            assertTrue(m == testTime.getMeridiem());
         }*/
     }
 
