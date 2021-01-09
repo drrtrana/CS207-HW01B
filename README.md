@@ -1,4 +1,4 @@
-###### CS-207-3: Programming II <br> Spring 2021 <br> Northeastern Illinois University <br> Homework #1 <br> Programming I Review
+###### CS-207-3: Programming II <br> Spring 2021 <br> Northeastern Illinois University <br> Homework #1B <br> Suggested Due Date: 01/20/21 at 9:00 p.m. (CT) <br> Due Date: 02/10/21 at 9:00 p.m. (CT)<br> Programming I Review
 
 **Getting Started**
 
@@ -16,11 +16,11 @@
 - Please also commit code after each step of each problem and remember to run the unit tests (where applicable) and code analyzers before you commit.
 
 **2.** Then in IntelliJ, go to File, select Export to Zip File. This will a create a zip file of the entire project directory.<br>
-**3.** Submit the .zip file to the Homework 1A Assignment folder on D2L.<br>
+**3.** Submit the .zip file to the Homework 1B Assignment folder on D2L.<br>
 
 **Problem 1**
 
-**1.** In the main/java directory, create an immutable class named `Time`. (Remember that objects created from an immutable class cannot have it's content changed.) It should include the following:
+**1.** In the main/java directory, create an immutable class named `Time`. (Remember that objects created from an immutable class cannot have its content changed.) It should include the following:
 - Three private integer instance variables named `hour`, `min`, `sec`, and a char named `meridiem`. Run the code analyzers and commit your code now.
 - A default constructor that sets the `hour` instance variable to `12`, the `min` and `sec` instance variables to `0`, and the `meridiem` instance variable to `'A'`. Run the code analyzers and commit your code now.
 - A constructor that takes three integer parameters (in the specific order of hours, minutes, seconds) and then a char parameter and sets the instance variables. Run the code analyzers and commit your code now.
