@@ -21,10 +21,10 @@
 **Problem 1**
 
 **1.** In the main/java directory, create an immutable class named `Time`. (Remember that objects created from an immutable class cannot have its content changed.) It should include the following:
-- Three private integer instance variables named `hour`, `min`, `sec`, and a char named `meridiem`. Run the code analyzers and commit your code now.
-- A default constructor that sets the `hour` instance variable to `12`, the `min` and `sec` instance variables to `0`, and the `meridiem` instance variable to `'A'`. Run the code analyzers and commit your code now.
-- A constructor that takes three integer parameters (in the specific order of hours, minutes, seconds) and then a char parameter and sets the instance variables. Run the code analyzers and commit your code now.
-- Getters for all the instance variables.
+- Three private integer instance variables named `hour`, `min`, `sec`, and a char named `meridiem`. 
+- A default constructor that sets the `hour` instance variable to `12`, the `min` and `sec` instance variables to `0`, and the `meridiem` instance variable to `'A'`. 
+- A constructor that takes three integer parameters (in the specific order of hours, minutes, seconds) and then a char parameter and sets the instance variables. 
+- Getters for all the instance variables. Run the code analyzers and commit your code now.
 - A method named `getTotalMinutes` that does not take any parameters. It should return an integer value that represents the total number of minutes from midnight to the time stored in the `hour` and `min` instance variables (you can ignore the `sec` instance variable). You will find the `meridiem` instance variable helpful). Note that for the instance variable `meridiem`, `'A'`  represents AM and `'P'`  represents PM.
     - Uncomment the body of the tests with headers that start with "getTotalMinutesShouldReturn..." in the TestingTime class in the test/java directory to test this method. Run the code analyzers and commit your code now.
 - A method named `getTotalSeconds` that does not take any parameters. It should return an integer value that represents the total number of seconds from midnight to the time stored in the `hour`, `min` and `sec` instance variables.
